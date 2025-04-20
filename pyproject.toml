@@ -1,0 +1,31 @@
+[project]
+name = "ai-chatbot"
+version = "0.1.0"
+description = "A simple Streamlit-based chatbot using llama-cpp-python to run LLM models locally"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "AI Chatbot Team" }
+]
+dependencies = [
+    "streamlit>=1.24.0",
+    "llama-cpp-python>=0.2.0",
+    "python-dotenv>=1.0.0",
+    "numpy>=1.22.0",
+    "gguf>=0.1.0",
+    "sentencepiece>=0.1.97",
+    "tqdm>=4.65.0",
+    "rich>=13.3.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
